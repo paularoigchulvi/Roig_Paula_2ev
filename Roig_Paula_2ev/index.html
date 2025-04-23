@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comercio Electrónico</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+  <script defer src="js/script.js"></script>
+</head>
+<body>
+  <!-- Boton para volver arriba -->
+  <a href="#inicio" id="scroll-top">⬆️</a>
+
+  <!-- barra de navegacion fija -->
+  <header id="inicio">
+    <nav class="navbar">
+        <!-- logo de zara -->
+        <div class="logo"> 
+            <img src="img/logo.png" alt="ZARA logo" class="logo-img">
+          </div>
+      <ul class="nav-links">
+        <!-- menu -->
+        <li><a href="#cabecera">Inicio</a></li>
+        <li><a href="#productos">Mujer</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+      <div class="icons">
+        <!-- iconos -->
+        <img src="img/lupa.png" alt="Buscar" class="icon-img">
+        <img src="img/carrito.png" alt="Carrito" class="icon-img">
+        <img src="img/user.png" alt="Usuario" class="icon-img">
+      </div>
+      
+    </nav>
+  </header>
+
+  <!-- Seccion de bienvenida -->
+  <section id="cabecera" class="hero">
+    <img src="img/header.jpg" alt="Producto estrella">
+    <h1>Bienvenido/a a ZARA</h1>
+  </section>
+
+  <!-- Seccion ropa de mujer -->
+  <section id="productos" class="productos">
+    <h2>Ropa de mujer</h2>
+    <div class="cards">
+      <div class="card">
+        <div class="slider">
+          <img src="img/prod1a.jpg" class="active">
+          <img src="img/prod1b.jpg">
+        </div>
+        <h3>Sombrero piel de ante</h3>
+        <p>Lorem ipsum dolor sit amet.</p>
+      </div>
+      <div class="card">
+        <div class="slider">
+          <img src="img/prod2a.jpg" class="active">
+          <img src="img/prod2b.jpg">
+        </div>
+        <h3>Chaqueta cuero marrón</h3>
+        <p>Lorem ipsum dolor sit amet.</p>
+      </div>
+    </div>
+    <div class="cards">
+        <div class="card">
+          <div class="slider">
+            <img src="img/prod3a.jpg" class="active">
+            <img src="img/prod3b.jpg">
+          </div>
+          <h3>Camiseta beige algodón</h3>
+          <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="card">
+          <div class="slider">
+            <img src="img/prod4a.jpg" class="active">
+            <img src="img/prod4b.jpg">
+          </div>
+          <h3>Chaleco pelo sintético</h3>
+          <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+      </div>
+  </section>
+
+  <!-- Seccion del contacto -->
+  <section id="contacto" class="contacto">
+    <h2>Contáctanos</h2>
+    <form id="formulario-contacto">
+      <input type="text" name="nombre" placeholder="Nombre" required>
+      <input type="email" name="email" placeholder="Email" required>
+      <textarea name="mensaje" placeholder="Tu mensaje" required></textarea>
+      <button type="submit">Enviar</button>
+      <p id="mensaje-error"></p>
+    </form>
+  </section>
+
+  <!-- footer -->
+  <footer>
+    <p>&copy; 2025 ZARA</p>
+  </footer>
+</body>
+</html>
